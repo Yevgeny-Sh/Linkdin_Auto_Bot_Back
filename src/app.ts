@@ -3,13 +3,12 @@ import { connectDb } from './database/connect';
 import cors from 'cors';
 import morgan from 'morgan';
 import helmet from 'helmet';
-import { corsConfig } from '../config';
 import router from './routes/routerIndex';
-
+import { corsConfig } from '../config';
 const app: Express = express();
 connectDb();
 
-app.use(cors());
+app.use(cors(corsConfig));
 app.use(morgan('dev'));
 app.use(helmet());
 app.use(express.json({}));
