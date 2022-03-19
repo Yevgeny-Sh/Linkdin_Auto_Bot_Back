@@ -8,6 +8,8 @@ config({ path: path.resolve(__dirname, '../mongo-atlas.env') });
 
 export async function connectDb(): Promise<void> {
   try {
+    console.log('process.env.MONGO_URI:');
+
     console.log(process.env.MONGO_URI);
 
     await mongoose.connect(`${process.env.MONGO_URI}`);
