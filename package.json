@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "type": "module",
+  "module": "es6",
+  "target": "es5",
   "scripts": {
     "start": "ts-node ./dist/src/index.js",
     "dev-build": "tsc && npm run start",
