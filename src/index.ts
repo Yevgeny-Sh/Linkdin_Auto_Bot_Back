@@ -1,5 +1,5 @@
-//import { app } from './app';
-const { app } = require('./app');
+import { app } from './app';
+
 const PORT = process.env.PORT || 8080;
 const SERVER_MESSAGE = `Express listens on http://127.0.0.1:${PORT}`;
 
