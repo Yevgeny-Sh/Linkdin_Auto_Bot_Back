@@ -4,7 +4,6 @@
   "exclude": ["node_modules"],
   "compilerOptions": {
     "typeRoots": ["./src/types", "./node_modules/@types"],
-    "esModuleInterop": true,
     "target": "es2021",
     "moduleResolution": "node",
     "outDir": "dist",
